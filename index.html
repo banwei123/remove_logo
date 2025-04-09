@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>无水印短视频/图文下载</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>无水印短视频/图文下载</h1>
+    <div class="input-section">
+      <input type="text" id="urlInput" placeholder="粘贴短视频链接...">
+      <button id="parseBtn">解析</button>
+    </div>
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <p>正在解析中...</p>
+    </div>
+    <div class="result-container" id="resultContainer">
+      <div class="video-container" id="videoContainer">
+        <video id="videoPlayer" controls></video>
+        <button id="downloadVideo" class="download-btn">下载视频</button>
+      </div>
+      <div class="images-container" id="imagesContainer">
+        <div class="images-grid" id="imagesGrid"></div>
+        <div class="download-buttons">
+          <button id="downloadAllImages" class="download-btn">下载全部图片</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
